@@ -19,8 +19,8 @@ def partial_fields(target_class, kwargs):
 
 
 # set tyro theme
-tyro.extras.set_accent_color("bright_cyan")
-args = tyro.cli(ArgumentConfig)
+# tyro.extras.set_accent_color("bright_cyan")
+# args = tyro.cli(ArgumentConfig)
 
 # specify configs for inference
 inference_cfg = partial_fields(InferenceConfig, args.__dict__)  # use attribute of args to initial InferenceConfig
